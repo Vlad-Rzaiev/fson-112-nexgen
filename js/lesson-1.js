@@ -57,7 +57,6 @@
 //   ? alert('Число потрапляє в діапазон')
 //   : alert('Число не потрапляє в діапазон');
 
-
 //TODO: 3===================================
 // Є 3 вікові групи : діти (0-16), дорослі(17-60), пенсіонери (61-100).
 // До якої групи відноситься Максим, якщо йому 55 років.Назву групи вивести на екран.
@@ -73,8 +72,6 @@
 // } else {
 //     alert("Помилка")
 // }
-    
-
 
 //TODO: 4 ===================================
 //* Конструкція switch
@@ -102,25 +99,35 @@
 // }
 // orderDrink(drink);
 
+// const drink = prompt('Оберіть напій').toLowerCase();
+// const drink2 = 'сік';
 
-const drink = prompt('Оберіть напій').toLowerCase();
-const drink2 = 'сік';
+// function orderDrink(nameDrink, price) {
+//   console.log(nameDrink);
+//   console.log(price);
+//   if (nameDrink === 'кава') {
+//     return alert('40 uah');
+//   } else if (nameDrink === 'чай') {
+//     return alert('30 uah');
+//   } else if (nameDrink === 'сік') {
+//     return alert('50 uah');
+//   } else {
+//     return alert('Такого напоя не існує');
+//   }
+// }
+// orderDrink(drink);
+// orderDrink(drink2);
 
-function orderDrink(nameDrink, price) {
-    console.log(nameDrink);
-    console.log(price);
-    if (nameDrink === 'кава') {
-        return alert('40 uah')
-    }
-    else if (nameDrink === 'чай') {
-        return alert('30 uah')
-    }
-    else if (nameDrink === 'сік') {
-        return alert('50 uah')
-    }
-    else {
-        return alert('Такого напоя не існує');
-    }
-}
-orderDrink(drink);
-orderDrink(drink2);
+//TODO: 5 ===================================
+//  Виведіть методом console.log() зірочки від 1 до 7 штук у вигляді трикутника таким чино
+// *
+// **
+// ***
+// ****
+// *****
+
+// let star = '*';
+// for (let i = 0; i < 7; i++) {
+//   console.log(star);
+//   star += '*';
+// }
