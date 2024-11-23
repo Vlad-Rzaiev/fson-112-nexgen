@@ -92,3 +92,111 @@
 
 // console.log(calculateAverage(3, 5, 2, 'Hello', true));
 // console.log(calculateAverage(2, 9));
+
+// * Літерал об'єкта
+//TODO:============task-1=========================
+// Створіть об'єкт "людина" з властивостями "ім'я", "хобі" і "вік". Напишіть метод "greet", який буде виводити на екран привітання з ім'ям людини.
+// Послідовно:
+// 1 додати поле mood зі значенням 'happy'
+// 2 замінити hobby на 'skydiving'
+
+// Створити обьект human
+
+// const human = {
+//     name: 'Bob',
+//     hobby: 'Soccer',
+//     age: 25,
+
+//     greet() {
+// console.log(`Hello ${this.name}`);
+//     }
+// }
+
+// human.mood = 'happy';
+// human['lastName'] = 'Mercer';
+// human.hobby = 'skydiving';
+
+// console.log(human);
+
+
+
+// const human1 = Object.create(human);
+// human1.name = 'John';
+
+// console.log(human1.greet());
+//
+
+// for (const key in human1) {
+//     if (human1.hasOwnProperty(key)) {
+//           console.log(key);
+//     }
+// }
+
+// console.log(Object.keys(human));
+// console.log(Object.values(human));
+// console.log(Object.entries(human));
+
+// const salaries = {
+//     bob: 1700,
+//     john: 1500,
+//     mango: 1600,
+// }
+
+// function totalSalaries(object) {
+//     let sum = 0;
+
+//     for (const key in object) {
+//         if (object.hasOwnProperty(key)) {
+//             sum += object[key];
+//         }
+//     }
+//     return sum;
+// }
+
+// console.log(totalSalaries(salaries));
+
+// function totalSalaries(object) {
+//     let sum = 0;
+
+//     for (const item of Object.values(object)) {
+//         sum += item;
+//     }
+//     return sum;
+// }
+
+//TODO:============task-2==============================================
+// 4. Створіть об'єкт "кошик" зі списком товарів та їх цін. Напишіть метод "calculateTotal", який буде обчислювати загальну суму товарів у кошику.
+
+// const cart = {
+//     products: [],
+//     price: [],
+
+//     calculateTotal() {
+//         let totalPrice = 0;
+
+//         for (const price of this.price) {
+//             totalPrice += price;
+//         }
+//         return `Сума вашого замовлення: ${totalPrice} грн`;
+//     },
+
+//     showProducts() {
+//         return this.products;
+//     },
+
+//     addProduct(productName) {
+//         this.products.push(productName);
+//     },
+
+//      addPrice(price) {
+//         this.price.push(price);
+//     },
+// }
+
+// cart.addProduct('Phone');
+// cart.addProduct('Laptop');
+
+// cart.addPrice(30000);
+// cart.addPrice(25000);
+
+// console.log(cart.calculateTotal());
