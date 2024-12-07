@@ -136,3 +136,53 @@
 //     .find(el => el === 'Bob');
 
 // console.log(getNewArr(user));
+
+
+//! Приватні властивості
+//TODO:=========task-01=================
+/**
+ * Напиши клас Client який створює об'єкт з ​​властивостями login email.
+ *
+ * Оголоси приватні властивості #login #email, доступ до яких зроби через геттер та сеттер login email
+ */
+
+
+
+// class Client {
+//     #login;
+//     #email;
+
+//     constructor(login, email) {
+//         this.#login = login;
+//         this.#email = email;
+//     }
+
+//     get getLogin() {
+//         return this.#login;
+//     }
+
+//     set changeLogin(newLogin) {
+//         this.#login = newLogin;
+//     }
+
+//     get getEmail() {
+//         return this.#email;
+//     }
+
+//     set changeEmail(newEmail) {
+//         this.#email = newEmail;
+//     }
+
+
+// }
+
+// const client = new Client('mango', 'mango@gmail.com');
+// const client2 = new Client('orange', 'orange@gmail.com')
+// client.changeLogin = 'apple';
+
+// console.log(client);
+// console.log(client2.getLogin);
+
+// console.log(client.getEmail);
+
+
