@@ -92,3 +92,4 @@
 
 // console.log(calculateAverage(3, 5, 2, 'Hello', true));
 // console.log(calculateAverage(2, 9));
+
