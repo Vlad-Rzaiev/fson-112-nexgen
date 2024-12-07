@@ -93,6 +93,7 @@
 // console.log(calculateAverage(3, 5, 2, 'Hello', true));
 // console.log(calculateAverage(2, 9));
 
+
 // * Літерал об'єкта
 //TODO:============task-1=========================
 // Створіть об'єкт "людина" з властивостями "ім'я", "хобі" і "вік". Напишіть метод "greet", який буде виводити на екран привітання з ім'ям людини.
@@ -200,3 +201,4 @@
 // cart.addPrice(25000);
 
 // console.log(cart.calculateTotal());
+
