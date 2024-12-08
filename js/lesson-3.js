@@ -186,3 +186,56 @@
 // console.log(client.getEmail);
 
 
+//! Практика наслідування у класах.
+//TODO:=========task-04=================
+/**
+  |============Person================
+  | Cтворіть клас `Person`, який містить наступні властивості:
+  |  - `name` - ім'я людини;
+  |  - `age`- вік людини;
+  |  - `gender` - стать людини;
+  |  - `email`- електронна пошта людини.
+  |
+  | ##### Крім того, клас `Person` має мати метод `getDetails()`, який повертає об'єкт з ім'ям, віком, статтю та електронною поштою людини.
+  |============================
+*/
+
+class Person {
+    constructor(name, age, gender, email) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.email = email;
+    }
+    getDetails() {
+        return {
+            name: this.name,
+            age: this.age,
+            gender: this.gender,
+            email : this.email,
+     }
+ }
+}
+const person = new Person("mango", 30, "male", "mango@gmail.com");
+console.log(person);
+console.log(person.getDetails());
+
+
+/**
+  |=============Employee===============
+  |Створіть клас `Employee`, який розширює клас `Person` і містить наступні властивості:
+  |  - salary - зарплата співробітника;
+  |  - department - відділ, в якому працює співробітник.
+  |  ##### Крім того, клас `Employee` має мати метод `getEmployeeDetails()`, який повертає об'єкт з ідентифікатором співробітника, зарплатою та відділом, в якому працює співробітник.
+  |============================
+*/
+class Employee extends Person{
+    constructor(salary, department, name, age, gender, email) {
+        super(name, age, gender, email);
+        this.salary = salary;
+        this.department = department;
+            
+    }
+}
+const employee = new Employee(5000, "IT", "mango", 30, "male", "mango@gmail.com");
+console.log(employee);
