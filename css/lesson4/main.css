@@ -34,3 +34,10 @@
 .odd {
   background-color: yellow;
 }
+
+.films-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
