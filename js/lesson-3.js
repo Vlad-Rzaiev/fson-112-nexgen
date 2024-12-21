@@ -200,25 +200,25 @@
   |============================
 */
 
-class Person {
-    constructor(name, age, gender, email) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.email = email;
-    }
-    getDetails() {
-        return {
-            name: this.name,
-            age: this.age,
-            gender: this.gender,
-            email : this.email,
-     }
- }
-}
-const person = new Person("mango", 30, "male", "mango@gmail.com");
-console.log(person);
-console.log(person.getDetails());
+// class Person {
+//     constructor(name, age, gender, email) {
+//         this.name = name;
+//         this.age = age;
+//         this.gender = gender;
+//         this.email = email;
+//     }
+//     getDetails() {
+//         return {
+//             name: this.name,
+//             age: this.age,
+//             gender: this.gender,
+//             email : this.email,
+//      }
+//  }
+// }
+// const person = new Person("mango", 30, "male", "mango@gmail.com");
+// console.log(person);
+// console.log(person.getDetails());
 
 
 /**
@@ -229,13 +229,15 @@ console.log(person.getDetails());
   |  ##### Крім того, клас `Employee` має мати метод `getEmployeeDetails()`, який повертає об'єкт з ідентифікатором співробітника, зарплатою та відділом, в якому працює співробітник.
   |============================
 */
-class Employee extends Person{
-    constructor(salary, department, name, age, gender, email) {
-        super(name, age, gender, email);
-        this.salary = salary;
-        this.department = department;
+// class Employee extends Person{
+//     constructor(salary, department, name, age, gender, email) {
+//         super(name, age, gender, email);
+//         this.salary = salary;
+//         this.department = department;
             
-    }
-}
-const employee = new Employee(5000, "IT", "mango", 30, "male", "mango@gmail.com");
-console.log(employee);
+//     }
+// }
+// const employee = new Employee(5000, "IT", "mango", 30, "male", "mango@gmail.com");
+// console.log(employee);
+
+
