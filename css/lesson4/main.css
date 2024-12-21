@@ -41,3 +41,8 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+
+.modal{
+  padding: 100px;
+  background-color: white;
+}

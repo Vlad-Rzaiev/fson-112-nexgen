@@ -89,3 +89,23 @@ watchedFilms.forEach(id => {
 });
 
 // filmsList.insertAdjacentHTML('afterend', createMarkup(films));
+
+//TODO:=========task-03=================
+//? 
+
+const instance = basicLightbox.create(`
+  <div class="modal">
+      <img src="https://static.hdrezka.ac/i/2023/2/24/h23d8c65d734akd89q94c.jpg" alt="film_4">
+      <p>
+          Your first lightbox with just a few lines of code.
+          Yes, it's really that simple.
+      </p>
+  </div>
+`)
+
+// instance.show()
+
+const modalBtn = document.querySelector('.modal-begin');
+modalBtn.addEventListener('click', event => {
+  instance.show();
+})
