@@ -71,3 +71,32 @@
 // containerEl.querySelector('.js-day-number').textContent = day;
 
 //  console.log(Date.now());
+
+//TODO:====================01==========================
+/**
+ * Перероби функцію на проміс таким чином, щоб проміс повертав значення
+ * через 2 секунди після виклику функції
+ */
+
+// function greet() {
+//   return 'hello world';
+// }
+
+// console.log(greet());
+
+// const greet = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve('Hello world');
+//     }, 2000);
+//   });
+// };
+// greet()
+//   .then(response => {
+//     console.log(response);
+//   })
+//   .catch(error => {
+//     console.log('catch', error);
+//   });
+
+// console.log(6);
